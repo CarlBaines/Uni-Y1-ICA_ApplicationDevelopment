@@ -234,6 +234,8 @@ public class Validation {
         System.out.println("Enter optional activity add-ons for " + singleCode
                 + " (Enter NONE if you do not want to add any add-ons): ");
         System.out.println("\nAvailable Activity Add-Ons: ");
+        
+        boolean insuranceRequired = isInsuranceRequired(singleCode);
 
         while (true) {
 
@@ -241,6 +243,9 @@ public class Validation {
             for (String addOnCode : activityAddOnCodesList) {
                 if (!selectedAddOns.contains(addOnCode)) {
                     availableActivityAddOns.add(addOnCode);
+                }
+                if (insuranceRequired == false){
+                    availableActivityAddOns.remove("INS");
                 }
             }
 
@@ -298,6 +303,46 @@ public class Validation {
         }
         // Return the list of selected add-ons
         return stringBuilder.toString().trim();
+    }
+    
+     /**
+     * isInsuranceRequired() method - This method is used as a helper method to determine whether insurance is required
+     * for an activity code in the validateActivityAddOnInput method.
+     *
+     *
+     * @param activity
+     * @return insuranceRequired (true or false).
+     */
+    
+    public static boolean isInsuranceRequired(String activity) {
+        boolean insuranceRequired;
+
+        switch (activity) {
+            case "ACT-01" -> {
+                insuranceRequired = false;
+                return insuranceRequired;
+            }
+            case "ACT-02" -> {
+                insuranceRequired = false;
+                return insuranceRequired;
+            }
+            case "ACT-03" -> {
+                insuranceRequired = true;
+                return insuranceRequired;
+            }
+            case "ACT-04" -> {
+                insuranceRequired = true;
+                return insuranceRequired;
+            }
+            case "ACT-05" -> {
+                insuranceRequired = true;
+                return insuranceRequired;
+            }
+            default -> {
+                insuranceRequired = false;
+                return insuranceRequired;
+            }
+        }
     }
 
     /**

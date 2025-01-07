@@ -1,3 +1,4 @@
 C Baines	2	3	J1234A	Jan-Mar	£830.30	ACT-01: No Add-Ons Applied! ACT-02: TRV, ACC ACT-03: No Add-Ons Applied!
 C Baines	2	2	J1234D	Oct-Dec	£598.00	[ACT-01: TRV, ACT-02: TRV, Itinerary Add-Ons: ACC]
 D Rinius	2	2	J1234B	Apr-Jun	£598.00	[ACT-01: TRV, ACT-02: TRV, Itinerary Add-Ons: ACC]
+C Baines	2	2	J2341D	Oct-Dec	£904.00	[ACT-03: INS, ACT-01: TRV, Itinerary Add-Ons: ACC]
