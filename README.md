@@ -2,6 +2,8 @@
 
 This repository contains the coursework completed for the Object-Oriented Programming module during my first year at Teesside University. The project involves designing and building a prototype Java application for Exciting Activities Ltd., a company that organises activities for individual and corporate clients.
 
+https://github.com/user-attachments/assets/f7d93451-2805-4ed5-9f4d-f04151fd4ee9
+
 ---
 
 ## Project Overview
